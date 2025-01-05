@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+}
+.container {
+  max-width: 23.5rem;
+  margin: 0 auto;
+}
+.header-img {
+  width: 20rem;
+  height: 9rem;
+  object-fit: contain;
+
+  margin-bottom: 1.5rem;
+}
+.heading {
+  font-family: "young serif";
+  font-weight: 400;
+  line-height: 1.1;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: hsl(24, 5%, 18%);
+}
+.heading-description {
+  line-height: 1.5;
+  font-size: 1.2rem;
+
+  margin-bottom: 2rem;
+}
+.prep-section {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem 2rem 0 2rem;
+  border-radius: 10px;
+}
+.timing {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 1rem;
+}
+.prep-lists {
+  font-size: 1.075rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1.5rem;
+}
+
+.prep-list::marker {
+  font-size: 13px;
+}
+.prep-list:last-child {
+  margin-bottom: 2rem;
+}
+
+.sub-heading {
+  font-family: "young serif";
+  font-size: 1.5rem;
+  color: hsl(14, 45%, 36%);
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.prep--lists--borders {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.prep--lists--borders:last-child {
+  border-bottom: none;
+}
+
+.list {
+  font-size: 1.075rem;
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+.list::marker {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+.list:last-child {
+  margin-bottom: 2rem;
+}
+.table-description {
+  line-height: 1.5;
+  font-size: 1.075rem;
+}
+table {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+
+  font-weight: 500;
+}
+td {
+  padding: 1rem;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.last-child {
+  border-bottom: none;
+}
+
+td > strong {
+  color: hsl(14, 45%, 36%);
+}
+@media (min-width: 1000px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  .container {
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    max-width: 40rem;
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+  }
+  .header-img {
+    width: 35rem;
+    height: 18rem;
+    object-fit: contain;
+    border-radius: 30px;
+    display: flex;
+    justify-self: center;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .heading-description {
+    line-height: 1.6;
+    font-size: 0.9rem;
+
+    margin-bottom: 2rem;
+  }
+  .prep-list {
+    font-size: 0.9rem;
+  }
+  .list {
+    font-size: 0.9rem;
+  }
+  .table-description {
+    font-size: 0.9rem;
+  }
+  table {
+    font-size: 0.9rem;
+  }
+}
